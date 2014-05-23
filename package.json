@@ -1,0 +1,44 @@
+{
+  "name": "json-template-generator",
+  "version": "0.1.0",
+  "description": "Use JSON schema to generate compliant input templates",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bripkens/json-template-generator.git"
+  },
+  "keywords": [
+    "json",
+    "generator",
+    "template"
+  ],
+  "author": {
+    "name": "Ben Ripkens",
+    "email": "bripkens.dev@gmail.com",
+    "url": "http://bripkens.de"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bripkens/json-template-generator/issues"
+  },
+  "homepage": "https://github.com/bripkens/json-template-generator",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-jshint": "^1.6.1",
+    "gulp-closure-compiler": "^0.2.1",
+    "jshint-stylish": "^0.2.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-mocha": "^0.4.1",
+    "mocha": "^1.19.0"
+  }
+}

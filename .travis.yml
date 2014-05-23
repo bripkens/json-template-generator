@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - 0.10
+  - 0.11
+
+before_install:
+  - wget http://dl.google.com/closure-compiler/compiler-latest.zip
+  - unzip compiler-latest.zip
+  - npm install -g gulp
+
+script:
+  - gulp
