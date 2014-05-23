@@ -1,7 +1,8 @@
 var assert = require('assert');
 
-module.exports = function(jsonTemplateGenerator) {
+module.exports = function(jsonTemplateGenerator, minified) {
   function check(name, schema, expected) {
+    name = name + (minified ? ' (minified)' : '');
     it(name, function() {
       var actual = jsonTemplateGenerator(schema);
       assert.deepEqual(actual, expected);
@@ -123,6 +124,31 @@ module.exports = function(jsonTemplateGenerator) {
         'type': 'number'
       }]
     }, [false, 'TODO', 0.1]);
+  });
+
+  describe('README examples', function() {
+    check('example from json-schema.org', {
+      'title': 'Example Schema',
+      'type': 'object',
+      'properties': {
+        'firstName': {
+          'type': 'string'
+        },
+        'lastName': {
+          'type': 'string'
+        },
+        'age': {
+          'description': 'Age in years',
+          'type': 'integer',
+          'minimum': 0
+        }
+      },
+      'required': ['firstName', 'lastName']
+    }, {
+      'firstName': 'TODO',
+      'lastName': 'TODO',
+      'age': 0
+    });
   });
 
 };

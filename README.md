@@ -1,6 +1,10 @@
 # JSON Template Generator
 
 [![Build Status](https://travis-ci.org/bripkens/json-template-generator.svg?branch=master)](https://travis-ci.org/bripkens/json-template-generator)
+![Dependency Status](https://david-dm.org/bripkens/json-template-generator.png)
+
+[![browser support](https://ci.testling.com/bripkens/json-template-generator.png)
+](https://ci.testling.com/bripkens/json-template-generator)
 
 ## Installation
 
@@ -12,7 +16,50 @@
 
 ## Usage
 
-TODO
+You can generally run `json-template-generator` in both a browser and Node.js
+context. To do so you can access the global `jsonTemplateGenerator` variable
+or `require('json-template-generator')`. Now you simply need to call the
+function with a JSON schema in order to create a template from this schema.
+
+```
+var template = jsonTemplateGenerator({
+  'title': 'Example Schema',
+  'type': 'object',
+  'properties': {
+    'firstName': {
+      'type': 'string'
+    },
+    'lastName': {
+      'type': 'string'
+    },
+    'age': {
+      'description': 'Age in years',
+      'type': 'integer',
+      'minimum': 0
+    }
+  },
+  'required': ['firstName', 'lastName']
+});
+
+// Results in the following object:
+{
+  'firstName': 'TODO',
+  'lastName': 'TODO',
+  'age': 0
+}
+```
+
+## Executing the tests
+
+```
+npm install -g gulp testling
+
+# Run unit tests in a node context
+gulp
+
+# Run tests in a browser context
+testling
+```
 
 ## License (MIT)
 
