@@ -1,5 +1,9 @@
 # JSON Template Generator
 
+[![Build Status](https://travis-ci.org/bripkens/json-template-generator.svg?branch=master)](https://travis-ci.org/bripkens/json-template-generator)
+
+
+
 ## License (MIT)
 
     The MIT License
