@@ -1,6 +1,6 @@
 {
   "name": "json-template-generator",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Use JSON schema to generate compliant input templates",
   "main": "lib/index.js",
   "directories": {
