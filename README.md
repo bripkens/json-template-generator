@@ -6,6 +6,7 @@
 [![browser support](https://ci.testling.com/bripkens/json-template-generator.png)
 ](https://ci.testling.com/bripkens/json-template-generator)
 
+
 ## Installation
 
  - Bower: `bower install --save bripkens/json-template-generator`
