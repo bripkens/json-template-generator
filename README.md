@@ -2,7 +2,17 @@
 
 [![Build Status](https://travis-ci.org/bripkens/json-template-generator.svg?branch=master)](https://travis-ci.org/bripkens/json-template-generator)
 
+## Installation
 
+ - Bower: `bower install --save bripkens/json-template-generator`
+ - Node / NPM: `npm install --save bripkens/json-template-generator`
+ - Download:
+   - [Development](https://raw.githubusercontent.com/bripkens/json-template-generator/master/dist/json-template-generator.js)
+   - [Production](https://raw.githubusercontent.com/bripkens/json-template-generator/master/dist/json-template-generator.min.js)
+
+## Usage
+
+TODO
 
 ## License (MIT)
 

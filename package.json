@@ -31,6 +31,20 @@
   "bugs": {
     "url": "https://github.com/bripkens/json-template-generator/issues"
   },
+  "testling": {
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ],
+    "harness": "mocha",
+    "files": "test/*.js"
+  },
   "homepage": "https://github.com/bripkens/json-template-generator",
   "devDependencies": {
     "gulp": "^3.6.2",
@@ -39,6 +53,7 @@
     "jshint-stylish": "^0.2.0",
     "gulp-concat": "^2.2.0",
     "gulp-mocha": "^0.4.1",
-    "mocha": "^1.19.0"
+    "mocha": "^1.19.0",
+    "testling": "^1.6.1"
   }
 }
