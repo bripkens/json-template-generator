@@ -1,0 +1,27 @@
+{
+  "name": "json-template-generator",
+  "version": "0.1.0",
+  "homepage": "https://github.com/bripkens/json-template-generator",
+  "authors": [
+    "Ben Ripkens <bripkens.dev@gmail.com>"
+  ],
+  "description": "Use JSON schema to generate compliant input templates",
+  "main": "dist/json-template-generator.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "json",
+    "generator",
+    "template"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
