@@ -6,7 +6,7 @@ node_js:
 
 before_install:
   - wget http://dl.google.com/closure-compiler/compiler-latest.zip
-  - unzip compiler-latest.zip
+  - unzip compiler-latest.zip -d compiler-latest
   - npm install -g gulp
 
 script:
