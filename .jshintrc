@@ -1,7 +1,7 @@
 {
   "sub": true,
   "maxdepth": 4,
-  "maxcomplexity": 5,
+  "maxcomplexity": 10,
   "maxlen": 80,
   "maxparams": 3,
   "trailing": true,

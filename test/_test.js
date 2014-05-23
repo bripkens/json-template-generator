@@ -47,6 +47,23 @@ module.exports = function(jsonTemplateGenerator, minified) {
     }, null);
   });
 
+  describe('default values', function() {
+    check('for strings', {
+      type: 'string',
+      'default': 'foo'
+    }, 'foo');
+
+    check('when null', {
+      type: 'string',
+      'default': null
+    }, null);
+
+    check('for integers', {
+      type: 'integer',
+      'default': 42
+    }, 42);
+  });
+
   describe('nested properties', function() {
     check('all standard properties', {
       'type': 'object',
@@ -151,4 +168,21 @@ module.exports = function(jsonTemplateGenerator, minified) {
     });
   });
 
+  describe('complex examples', function() {
+    check('smd-service', require('./examples/smd-service.json'), {
+      transport: 'POST',
+      envelope: 'URL',
+      contentType: 'application/json',
+      target: 'http://example.com',
+      parameters: [],
+      name: 'TODO'
+    });
+
+    check('unix', require('./examples/unix.json'), {
+      storage: {},
+      fstype: 'ext3',
+      options: ['TODO'],
+      readonly: false
+    });
+  });
 };
