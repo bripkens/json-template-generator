@@ -63,6 +63,9 @@ var template = jsonTemplateGenerator({
 }
 ```
 
+Further examples can be seen in the
+[tests](https://github.com/bripkens/json-template-generator/blob/master/test/_test.js).
+
 ## Known Limitations
 
  - validation rules are not taken into account
