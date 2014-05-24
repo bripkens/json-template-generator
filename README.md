@@ -6,6 +6,19 @@
 [![browser support](https://ci.testling.com/bripkens/json-template-generator.png)
 ](https://ci.testling.com/bripkens/json-template-generator)
 
+JSON schema can be used to validate input and to document JSON-consuming APIs.
+The `json-schenma-generator` aims to generate JavaScript objects which match a
+provided JSON schema. These JavaScript objects can be used to provide
+users of API exploration tools such as
+[Swagger](https://helloreverb.com/developers/swagger) and
+[RAML](http://raml.org/) with request body samples.
+
+See the following example which shows a RAML console integration. Note the
+selected `application/json` content type, the
+*Prefill with schema based template* link and the body input field which has
+been filled out with the help of `json-template-generator`.
+![Documentation of a very simple RAML API endpoing](raml-example.png)
+
 
 ## Installation
 
@@ -49,6 +62,11 @@ var template = jsonTemplateGenerator({
   'age': 0
 }
 ```
+
+## Known Limitations
+
+ - validation rules are not taken into account
+ - JSON references (`$ref`) are not followed
 
 ## Executing the tests
 
